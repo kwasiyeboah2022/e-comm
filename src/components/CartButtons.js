@@ -20,11 +20,6 @@ const CartButtons = () => {
         </span>
       </Link>
       {myUser ? (
-        <button type="button" className="auth-btn" onClick={loginWithRedirect}>
-          Login
-          <FaUserPlus />
-        </button>
-      ) : (
         <button
           type="button"
           className="auth-btn"
@@ -32,6 +27,11 @@ const CartButtons = () => {
         >
           Logout
           <FaUserMinus />
+        </button>
+      ) : (
+        <button type="button" className="auth-btn" onClick={loginWithRedirect}>
+          Login
+          <FaUserPlus />
         </button>
       )}
     </Wrapper>
